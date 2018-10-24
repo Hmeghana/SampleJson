@@ -12,13 +12,12 @@ import java.util.List;
 
 public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.MyViewHolder> {
     List<Person> list;
-
+    Context context;
     public PersonAdapter(List<Person> list, Context context) {
         this.list = list;
         this.context = context;
     }
 
-    Context context;
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -46,7 +45,7 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.MyViewHold
             name=itemView.findViewById(R.id.name);
             email=itemView.findViewById(R.id.email);
             home=itemView.findViewById(R.id.home);
-            mobile=itemView.findViewById(R.id.middle);
+            mobile=itemView.findViewById(R.id.mobile);
         }
     }
 }

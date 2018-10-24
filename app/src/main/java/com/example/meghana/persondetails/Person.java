@@ -2,7 +2,9 @@ package com.example.meghana.persondetails;
 
 public class Person {
     private String name;
-
+    private String home;
+    private String mobile;
+    private String email;
     public Person() {
     }
 
@@ -22,31 +24,30 @@ public class Person {
         this.email = email;
     }
 
-    public int getHome() {
+    public String getHome() {
         return home;
     }
 
-    public void setHome(int home) {
+    public void setHome(String home) {
         this.home = home;
     }
 
-    public int getMobile() {
+    public String getMobile() {
         return mobile;
     }
 
-    public void setMobile(int mobile) {
+    public void setMobile(String mobile) {
         this.mobile = mobile;
     }
 
-    private String email;
 
-    public Person(String name, String email, int home, int mobile) {
+
+    public Person(String name, String email, String home, String mobile) {
         this.name = name;
         this.email = email;
         this.home = home;
         this.mobile = mobile;
     }
 
-    private int home;
-    private int mobile;
+
 }

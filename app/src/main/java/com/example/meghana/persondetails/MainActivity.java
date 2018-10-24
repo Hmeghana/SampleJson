@@ -42,8 +42,8 @@ List<Person> list;
                     Person person=new Person();
                     person.setName(personDetails.getString("name"));
                     person.setEmail(personDetails.getString("email"));
-                    person.setHome(personDetails.getInt("home"));
-                    person.setMobile(personDetails.getInt("mobile"));
+                    person.setHome(personDetails.getString("home"));
+                    person.setMobile(personDetails.getString("mobile"));
                     list.add(person);
                 }
                 PersonAdapter adapeter=new PersonAdapter(list,this);
